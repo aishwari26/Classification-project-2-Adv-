@@ -4,6 +4,7 @@ import pandas as pd
 
 model=joblib.load("Employee_Attrition_model.joblib")
 st.title("Employee Attrition Prediction System")
+
 age=st.number_input("Age",min_value=18,max_value=60,value=30)
 daily_rate = st.number_input("Daily Rate", min_value=102, max_value=1499, value=800)
 gender=st.selectbox("Gender",["Male","Female"])
