@@ -1,128 +1,208 @@
-Employee Attrition Prediction using Machine Learning
-📌 Project Overview
+# Employee Attrition Prediction using Machine Learning
 
-This project predicts whether an employee is likely to leave the company (Attrition = Yes) or stay (Attrition = No) using Machine Learning.
+## 📌 Project Overview
 
-The complete project includes:
+This project predicts whether an employee is likely to **leave the company** or **stay** using Machine Learning.
 
-Data preprocessing
-Exploratory Data Analysis (EDA)
-Feature Engineering
-Machine Learning model comparison
-Hyperparameter tuning
-Model evaluation
-Model deployment using Streamlit
-🎯 Problem Statement
+The project follows a complete end-to-end Machine Learning workflow, including:
 
-Employee attrition is a major challenge for organizations. Predicting employees who are likely to leave helps companies take proactive measures to improve employee retention.
+- Data Preprocessing
+- Exploratory Data Analysis (EDA)
+- Feature Engineering
+- Model Building
+- Hyperparameter Tuning
+- Model Evaluation
+- Model Deployment using Streamlit
 
-📊 Dataset
+---
 
-IBM HR Employee Attrition Dataset
+## 🎯 Problem Statement
 
-Target Variable:
+Employee attrition is one of the major challenges faced by organizations.
 
-Attrition
-Yes → Employee will leave
-No → Employee will stay
-🛠️ Technologies Used
-Python
-Pandas
-NumPy
-Matplotlib
-Seaborn
-Scikit-Learn
-XGBoost
-Joblib
-Streamlit
-🔍 Data Preprocessing
-Missing value handling using SimpleImputer
-One-Hot Encoding for categorical features
-Pipeline and ColumnTransformer implementation
-Train-Test Split
-Feature preprocessing integrated into the pipeline
-🤖 Models Implemented
-Logistic Regression
-Decision Tree Classifier
-Random Forest Classifier
-Support Vector Machine (SVM)
-XGBoost Classifier
-⚙️ Hyperparameter Tuning
+The objective of this project is to build a Machine Learning model that predicts whether an employee is likely to leave the company so that organizations can take preventive actions to improve employee retention.
+
+---
+
+## 📂 Dataset
+
+**IBM HR Employee Attrition Dataset**
+
+**Target Variable**
+
+- Attrition
+  - Yes → Employee will Leave
+  - No → Employee will Stay
+
+---
+
+## 🛠️ Technologies Used
+
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Scikit-Learn
+- XGBoost
+- Joblib
+- Streamlit
+
+---
+
+## 🔍 Data Preprocessing
+
+The following preprocessing techniques were applied:
+
+- Handling Missing Values using **SimpleImputer**
+- One-Hot Encoding for categorical features
+- Pipeline implementation
+- ColumnTransformer implementation
+- Train-Test Split
+
+The preprocessing pipeline is automatically applied during prediction.
+
+---
+
+## 🤖 Machine Learning Models Used
+
+The following models were trained and evaluated:
+
+- Logistic Regression
+- Decision Tree Classifier
+- Random Forest Classifier
+- Support Vector Machine (SVM)
+- XGBoost Classifier
+
+---
+
+## ⚙️ Hyperparameter Tuning
 
 Hyperparameter tuning was performed using:
 
-GridSearchCV
-RandomizedSearchCV
+- GridSearchCV
+- RandomizedSearchCV
 
-Cross-validation (5-Fold) was used for model selection.
+5-Fold Cross Validation was used for model selection.
 
-📈 Model Evaluation
+---
 
-Evaluation Metrics:
+## 📈 Model Evaluation
 
-Accuracy
-Precision
-Recall
-F1 Score
-Confusion Matrix
-Classification Report
-Final Model
+Evaluation Metrics Used:
 
-Support Vector Machine (SVM)
+- Accuracy
+- Precision
+- Recall
+- F1 Score
+- Confusion Matrix
+- Classification Report
 
-Reasons:
+---
 
-Highest overall test accuracy among the models.
-Better Precision, Recall and F1-score for the minority class compared to other models evaluated.
-Selected after hyperparameter tuning.
-🚀 Streamlit Application
+## 🏆 Final Model
 
-The trained model was deployed using Streamlit.
+**Support Vector Machine (SVM)**
 
-Features:
+### Why SVM?
 
-User-friendly interface
-Accepts employee information
-Predicts whether the employee is likely to leave or stay
-Uses the saved Joblib model
-📁 Project Structure
+Among all the trained models, SVM achieved the best overall performance after hyperparameter tuning.
+
+The model was selected based on:
+
+- Highest Test Accuracy
+- Better Precision
+- Better Recall
+- Better F1 Score
+
+---
+
+## 🚀 Streamlit Application
+
+A Streamlit web application was developed for real-time prediction.
+
+### Features
+
+- User-friendly Interface
+- Takes Employee Details as Input
+- Predicts whether the Employee will Leave or Stay
+- Uses the trained Joblib model for prediction
+
+---
+
+## 📁 Project Structure
+
+```text
 Employee-Attrition-Prediction/
 │
 ├── app.py
-├── Employee_Attrition_model.joblib
 ├── Employee_Attrition.ipynb
+├── Employee_Attrition_model.joblib
 ├── requirements.txt
 ├── README.md
-├── dataset.csv (or dataset link)
+├── dataset.csv
 └── images/
-▶️ How to Run
+```
 
-Clone the repository
+---
 
-git clone <repository_link>
+## ▶️ How to Run
 
-Install dependencies
+### Clone the Repository
 
+```bash
+git clone <repository-link>
+```
+
+### Install Dependencies
+
+```bash
 pip install -r requirements.txt
+```
 
-Run Streamlit
+### Run Streamlit
 
+```bash
 streamlit run app.py
-📌 Future Improvements
-Improve recall for the minority class using advanced imbalance handling techniques such as SMOTE.
-Experiment with ensemble learning methods.
-Deploy the application on Streamlit Community Cloud.
-📚 Learning Outcomes
+```
+
+---
+
+## 📊 Future Improvements
+
+- Handle class imbalance using techniques such as SMOTE.
+- Improve Recall for the minority class.
+- Deploy the application online using Streamlit Community Cloud.
+
+---
+
+## 📚 What I Learned
 
 Through this project, I learned:
 
-End-to-end Machine Learning workflow
-Data preprocessing using Pipelines
-Feature Engineering
-Hyperparameter tuning
-Model comparison and evaluation
-Saving and loading models using Joblib
-Building and deploying ML applications using Streamlit
-⭐ Final Note
+- Data Cleaning
+- Exploratory Data Analysis (EDA)
+- Feature Engineering
+- Scikit-Learn Pipelines
+- ColumnTransformer
+- Hyperparameter Tuning
+- Model Evaluation
+- Joblib Model Saving & Loading
+- Streamlit Deployment
+- End-to-End Machine Learning Workflow
 
-This project demonstrates a complete end-to-end Machine Learning pipeline—from data preprocessing and model building to deployment—using industry-standard tools such as Scikit-Learn Pipelines, Joblib, and Streamlit.
+---
+
+## ⚠️ Limitations
+
+The dataset is imbalanced, containing significantly more employees who stayed than employees who left.
+
+Although techniques such as `class_weight='balanced'` were used, the model still performs better on the majority class than the minority class.
+
+---
+
+## ⭐ Conclusion
+
+This project demonstrates a complete end-to-end Machine Learning pipeline, starting from data preprocessing to deployment using Streamlit.
+
+It showcases practical implementation of Scikit-Learn Pipelines, Hyperparameter Tuning, Model Evaluation, Joblib, and Streamlit in a real-world HR Analytics problem.
