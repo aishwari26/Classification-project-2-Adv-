@@ -100,20 +100,26 @@ Evaluation Metrics Used:
 
 ---
 
-## 🏆 Final Model
+## 📊 Model Performance
+
+| Metric | Random Forest | XGBoost | **Support Vector Machine (Best Model)** |
+|-------------------|--------------:|---------:|-------------------------------:|
+| **Test Accuracy** | 83.33% | 87.07% | **88.78%** ✅ |
+| **Precision (Leave)** | 0.57 | 0.57 | **1.00** ✅ |
+| **Recall (Leave)** | 0.10 | 0.10 | **0.15** ✅ |
+| **F1-Score (Leave)** | 0.17 | 0.17 | **0.27** ✅ |
+
+### 🏆 Final Model
 
 **Support Vector Machine (SVM)**
 
-### Why SVM?
+Reasons for selecting SVM:
 
-Among all the trained models, SVM achieved the best overall performance after hyperparameter tuning.
-
-The model was selected based on:
-
-- Highest Test Accuracy
-- Better Precision
-- Better Recall
-- Better F1 Score
+- Highest Test Accuracy (**88.78%**)
+- Highest Precision for predicting employee attrition (**1.00**)
+- Best F1-Score among the evaluated models
+- Selected after hyperparameter tuning using **RandomizedSearchCV**
+- Deployed using **Streamlit**
 
 ---
 
