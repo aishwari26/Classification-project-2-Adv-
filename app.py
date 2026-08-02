@@ -151,16 +151,16 @@ if st.button("Predict Attrition"):
 
 #Converts the input_data dictionary into a one-row DataFrame.
 #Exactly like one row of your X_train.
-input_df = pd.DataFrame([input_data])
+    input_df = pd.DataFrame([input_data])
 
 #Sends that one employee's data to your trained SVM model.
 #The model predicts:
 #0 → Employee will stay
 #1 → Employee will leave
-prediction = model.predict(input_df)  #prediction[0] → model.predict() returns an array, even for one employee.
+    prediction = model.predict(input_df)  #prediction[0] → model.predict() returns an array, even for one employee.
 
-if prediction[0] == 1:                                          #prediction = [1]
-    st.error("Employee Will Leave")                              #prediction[0]   # gives 1
+    if prediction[0] == 1:                                          #prediction = [1]
+        st.error("Employee Will Leave")                              #prediction[0]   # gives 1
                                                                
-else:
-    st.success("Employee Will Stay")
+    else:
+        st.success("Employee Will Stay")
