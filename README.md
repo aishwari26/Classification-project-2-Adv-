@@ -215,7 +215,10 @@ It showcases practical implementation of Scikit-Learn Pipelines, Hyperparameter 
 
 
 
-## The streamlit 
+
+
+## The Streamlit Execution
 
 <img width="1402" height="847" alt="Screenshot 2026-08-04 204313" src="https://github.com/user-attachments/assets/0b3712ac-9c6b-42ed-8052-28e289f8dd09" />
 
+<img width="1046" height="762" alt="Screenshot 2026-08-04 204511" src="https://github.com/user-attachments/assets/7f40b308-3424-43e4-ba17-3f254aee1437" />
