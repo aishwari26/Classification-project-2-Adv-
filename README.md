@@ -212,3 +212,10 @@ Although techniques such as `class_weight='balanced'` were used, the model still
 This project demonstrates a complete end-to-end Machine Learning pipeline, starting from data preprocessing to deployment using Streamlit.
 
 It showcases practical implementation of Scikit-Learn Pipelines, Hyperparameter Tuning, Model Evaluation, Joblib, and Streamlit in a real-world HR Analytics problem.
+
+
+
+## The streamlit 
+
+<img width="1402" height="847" alt="Screenshot 2026-08-04 204313" src="https://github.com/user-attachments/assets/0b3712ac-9c6b-42ed-8052-28e289f8dd09" />
+
