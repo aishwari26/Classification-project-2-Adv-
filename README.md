@@ -224,3 +224,6 @@ It showcases practical implementation of Scikit-Learn Pipelines, Hyperparameter 
 
 <img width="1153" height="761" alt="Screenshot 2026-08-04 204447" src="https://github.com/user-attachments/assets/493cdb19-f90f-4729-ab47-42da184ff602" />
 
+
+<img width="1046" height="762" alt="Screenshot 2026-08-04 204511" src="https://github.com/user-attachments/assets/93c0febc-e53f-40fa-9331-afee285ada1d" />
+
